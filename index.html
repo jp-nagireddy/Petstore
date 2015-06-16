@@ -1,0 +1,112 @@
+
+<html>
+
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Pets Store</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+</head>
+
+<body>
+<div class="main">
+
+<div class="header">
+<div class="header1"><h1> PET STORE</h1></div><!-- Header1-->
+
+<div class="search">
+					<div class="inner">
+						<div class="button-search"><i class="fa fa-search"></i></div>
+						<input type="search" name="search" placeholder="Search" value="">
+					</div><!-- inner-->
+				</div><!-- search-->
+
+</div><!-- header-->
+
+<div class="header_menu">
+
+<nav class= "nav_menu">
+        	<ul>
+            	<li><a href="index.html"><img src="images/home.png"></a></li>
+                <li><a href="aboutus.html">About Us</a></li>                
+                <li><a href="pets.html">Pet Animals</a></li>
+                <li><a href="latestpets.html">Latest pet Arrivals</a></li>
+                <li><a href="stores.html">Stores</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+             </ul>
+      </nav> <!-- Nav-->
+
+</div><!-- Header menu-->
+
+<script type="text/javascript">
+jQuery(document).ready(function () {
+//add class active for the first image of slideshow
+$("#slideshow img:first").addClass("active");
+//call the slideshow for every 3 seconds (3000 mili-secs)
+setInterval("slideshow()", 3500);
+});
+function slideshow() {
+var $active = $("#slideshow .active");
+var $next = ($("#slideshow .active").next().length > 0) ? $("#slideshow .active").next() : $("#slideshow img:first");
+// 1500 is the fade in and out speed in mili-secs - change this to speed up or slow down
+$next.fadeIn(3500,function(){
+$next.addClass("active");
+$active.fadeOut(3500).removeClass("active");
+});
+}
+</script>
+
+<div id="slideshow">
+  <img src="images/Goat1.png" width="1023" height="358" class="" style="display: none;"> 
+<img src="images/banner1.jpg" width="1023" height="358" style="display: inline; opacity: 0.843253791907412;" class=""> 
+<img src="images/topbanner_051.png" width="1023" height="358" style="display: inline;" class="active"> 
+ <img src="images/Goat1.png" width="1023" height="358" style="display: none;" class=""> 
+ <img src="images/em1.png" width="1023" height="358" style="display: none;" class=""> 
+ <img src="images/Cow1.png" width="1023" height="358" style="display: none;" class=""> 
+  <img src="images/cat1.png" width="1023" height="358" style="display: none;" class=""> 
+
+ </div> <!-- Slideshow -->
+ 
+ <div class= "welcome"> 
+ <div class="wl_left"> 
+ <h1>Welcome to Pet Store</h1>
+ <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+ <div class="moresl"> &gt;&gt;<a href="aboutus.html">More</a></div>
+ 
+ </div><!-- welcome left-->
+ 
+ <div class="wl_right"> 
+ <h1>New Arrivals</h1>
+ <div class="wl_rt_img img1"><img src="images/7_34.gif" >  </div>
+ <div class="wl_rt_img img2"><img src="images/9_32.gif" >  </div>
+ </div><!-- welcome right-->
+ 
+ </div><!--welcome -->
+ 
+ 
+<div class="petani">
+ <h1>Pets</h1>
+   <div class="pet_ani_img">
+	<div class="pet_ani_inner"><img src="images/g1.jpg" > </div>
+	<div class=" pet_ani_inner"><img src="images/2_25.gif" > </div>
+	<div class=" pet_ani_inner"><img src="images/3_26.gif" > </div>
+	<div class=" pet_ani_inner"><img src="images/d1.jpg" > </div>
+	<div class=" pet_ani_inner"><img src="images/6_28.gif"> </div>
+ </div><!--pet_ani_img -->
+</div><!--petani -->
+ 
+<div class="footer">
+
+<div class="footer_menu">
+<div class="rights"><p>All Rights Reserved @ 2014 powered by <a href="https://www.facebook.com/lohithmintu">Lohith Sunchu</a></p></div>
+</div><!--footer_menu-->
+
+
+</div><!--fotter -->
+
+
+
+</div><!--main -->
+</body>
+</html>
